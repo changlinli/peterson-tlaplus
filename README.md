@@ -23,3 +23,10 @@ algorithm, I've also made it clear what parts of Peterson's algorithm are truly
 necessary and which are implementation details (in particular the spin locks in
 the usual presentation are definitely an implementation detail that fall away in
 the TLA+ specification).
+
+## Model checking this specification
+
+You will need the TLA+ Toolbox to syntactically check this specification and run
+the model checker TLC against it. This specification comes with a single model
+out of the box that has all its parameters already set up. Simply add
+`Peterson.tla` as a new spec in the toolbox.
