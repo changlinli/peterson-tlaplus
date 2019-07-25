@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.lamport.tla.toolbox.tool.tlc.modelCheck">
+<stringAttribute key="TLCCmdLineParameters" value=""/>
+<stringAttribute key="configurationName" value="model"/>
+<booleanAttribute key="deferLiveness" value="false"/>
+<intAttribute key="dfidDepth" value="100"/>
+<booleanAttribute key="dfidMode" value="false"/>
+<intAttribute key="distributedFPSetCount" value="0"/>
+<stringAttribute key="distributedNetworkInterface" value="10.0.13.211"/>
+<intAttribute key="distributedNodesCount" value="1"/>
+<stringAttribute key="distributedTLC" value="off"/>
+<stringAttribute key="distributedTLCVMArgs" value=""/>
+<intAttribute key="fpBits" value="1"/>
+<intAttribute key="fpIndex" value="1"/>
+<intAttribute key="maxHeapSize" value="25"/>
+<intAttribute key="maxSetSize" value="1000000"/>
+<booleanAttribute key="mcMode" value="true"/>
+<stringAttribute key="modelBehaviorInit" value="Init"/>
+<stringAttribute key="modelBehaviorNext" value="Next"/>
+<stringAttribute key="modelBehaviorSpec" value="SpecWithFairness"/>
+<intAttribute key="modelBehaviorSpecType" value="1"/>
+<stringAttribute key="modelBehaviorVars" value="flag, process1State, process0State, flag0, flag1, processState, turn"/>
+<stringAttribute key="modelComments" value=""/>
+<booleanAttribute key="modelCorrectnessCheckDeadlock" value="true"/>
+<listAttribute key="modelCorrectnessInvariants">
+<listEntry value="1MutualExclusion"/>
+<listEntry value="1TypeOK"/>
+</listAttribute>
+<listAttribute key="modelCorrectnessProperties">
+<listEntry value="1WillEventuallyEnterCritical"/>
+</listAttribute>
+<stringAttribute key="modelExpressionEval" value=""/>
+<stringAttribute key="modelParameterActionConstraint" value=""/>
+<listAttribute key="modelParameterConstants"/>
+<stringAttribute key="modelParameterContraint" value=""/>
+<listAttribute key="modelParameterDefinitions"/>
+<stringAttribute key="modelParameterModelValues" value="{}"/>
+<stringAttribute key="modelParameterNewDefinitions" value=""/>
+<intAttribute key="numberOfWorkers" value="4"/>
+<booleanAttribute key="recover" value="false"/>
+<stringAttribute key="result.mail.address" value=""/>
+<intAttribute key="simuAril" value="-1"/>
+<intAttribute key="simuDepth" value="100"/>
+<intAttribute key="simuSeed" value="-1"/>
+<stringAttribute key="specName" value="Peterson"/>
+<listAttribute key="traceExploreExpressions">
+<listEntry value="1    /\ process1State = &quot;waiting&quot;&#10;    /\ (flag0 = FALSE \/ turn /= 0)"/>
+<listEntry value="1    /\ process0State = &quot;waiting&quot;&#10;    /\ (flag1 = FALSE \/ turn /= 1)"/>
+</listAttribute>
+<stringAttribute key="view" value=""/>
+<booleanAttribute key="visualizeStateGraph" value="false"/>
+</launchConfiguration>
