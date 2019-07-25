@@ -27,6 +27,7 @@
 </listAttribute>
 <listAttribute key="modelCorrectnessProperties">
 <listEntry value="1WillEventuallyEnterCritical"/>
+<listEntry value="1[]MutualExclusion"/>
 </listAttribute>
 <stringAttribute key="modelExpressionEval" value=""/>
 <stringAttribute key="modelParameterActionConstraint" value=""/>
