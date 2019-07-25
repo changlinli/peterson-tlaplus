@@ -231,12 +231,16 @@ SpecWithFairness == Spec /\ WF_vars(Next) /\ \A p \in {0, 1} : WF_vars(ProcessRe
 (***************************************************************************)
 MutualExclusion == ~(processState[0] = "critical" /\ processState[1] = "critical")
 
+THEOREM Spec => []MutualExclusion
+
 (***************************************************************************)
 (* This is a basic liveness requirement that corresponds to what is called *)
 (* "Progress" in the Wikipedia article.  Both processes should eventually  *)
 (* be able to enter their critical sections.                               *)
 (***************************************************************************)
 WillEventuallyEnterCritical == <>(processState[0] = "critical") /\ <>(processState[1] = "critical")
+
+THEOREM SpecWithFairness => WillEventuallyEnterCritical
 
 (***************************************************************************)
 (* THIS INVARIANT DOES NOT HOLD AND SHOULD NOT HOLD! It's merely           *)
@@ -247,7 +251,13 @@ WillEventuallyEnterCritical == <>(processState[0] = "critical") /\ <>(processSta
 (***************************************************************************)
 CanOnlyBeCriticalIfTurn == \A p \in {0, 1} : processState[p] = "critical" => turn = p
 
+(***************************************************************************)
+(* Finally we note simply that our variables should always stay within the *)
+(* bounds we enumerated earlier.                                           *)
+(***************************************************************************)
+THEOREM Spec => TypeOK
+
 =============================================================================
 \* Modification History
-\* Last modified Thu Jul 25 02:13:09 EDT 2019 by changlin
+\* Last modified Thu Jul 25 11:05:46 EDT 2019 by changlin
 \* Created Wed Jul 24 18:56:50 EDT 2019 by changlin
