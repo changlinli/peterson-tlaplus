@@ -5,7 +5,7 @@ algorithm](https://en.wikipedia.org/wiki/Peterson%27s_algorithm), an algorithm
 that allows multiple processes to share a single-use resource without conflict.
 
 For a pretty-printed PDF version, see 
-[https://github.com/changlinli/peterson-tlaplus/releases/download/v1.0/Peterson.pdf](https://github.com/changlinli/peterson-tlaplus/releases/download/v1.0/Peterson.pdf).
+[https://github.com/changlinli/peterson-tlaplus/releases/download/v1.1/Peterson.pdf](https://github.com/changlinli/peterson-tlaplus/releases/download/v1.1/Peterson.pdf).
 
 This is meant as an intermediate introduction to TLA+ users. An example is
 someone who has just finished Leslie Lamport's video course on TLA+. The
