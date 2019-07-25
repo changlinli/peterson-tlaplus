@@ -6,7 +6,7 @@
 <intAttribute key="dfidDepth" value="100"/>
 <booleanAttribute key="dfidMode" value="false"/>
 <intAttribute key="distributedFPSetCount" value="0"/>
-<stringAttribute key="distributedNetworkInterface" value="10.0.13.211"/>
+<stringAttribute key="distributedNetworkInterface" value="192.168.0.13"/>
 <intAttribute key="distributedNodesCount" value="1"/>
 <stringAttribute key="distributedTLC" value="off"/>
 <stringAttribute key="distributedTLCVMArgs" value=""/>
@@ -19,12 +19,11 @@
 <stringAttribute key="modelBehaviorNext" value="Next"/>
 <stringAttribute key="modelBehaviorSpec" value="SpecWithFairness"/>
 <intAttribute key="modelBehaviorSpecType" value="1"/>
-<stringAttribute key="modelBehaviorVars" value="flag, process1State, process0State, flag0, flag1, processState, turn"/>
+<stringAttribute key="modelBehaviorVars" value="flag, processState, turn"/>
 <stringAttribute key="modelComments" value=""/>
 <booleanAttribute key="modelCorrectnessCheckDeadlock" value="true"/>
 <listAttribute key="modelCorrectnessInvariants">
 <listEntry value="1MutualExclusion"/>
-<listEntry value="1TypeOK"/>
 </listAttribute>
 <listAttribute key="modelCorrectnessProperties">
 <listEntry value="1WillEventuallyEnterCritical"/>
