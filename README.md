@@ -9,7 +9,7 @@ algorithms out there, but already has some potentially non-intuitive components,
 e.g. understanding why a process "gives its turn away."
 
 For a pretty-printed PDF version, see 
-[https://github.com/changlinli/peterson-tlaplus/releases/download/v1.1/Peterson.pdf](https://github.com/changlinli/peterson-tlaplus/releases/download/v1.1/Peterson.pdf).
+[https://github.com/changlinli/peterson-tlaplus/releases/download/v1.2/Peterson.pdf](https://github.com/changlinli/peterson-tlaplus/releases/download/v1.2/Peterson.pdf).
 
 This specification may seem long, but it is largely comments, which I hope help even non-TLA+ users
 understand the intuition behind Peterson's algorithm better.
