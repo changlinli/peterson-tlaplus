@@ -255,9 +255,9 @@ CanOnlyBeCriticalIfTurn == \A p \in {0, 1} : processState[p] = "critical" => tur
 (* Finally we note simply that our variables should always stay within the *)
 (* bounds we enumerated earlier.                                           *)
 (***************************************************************************)
-THEOREM Spec => TypeOK
+THEOREM Spec => []TypeOK
 
 =============================================================================
 \* Modification History
-\* Last modified Thu Jul 25 11:05:46 EDT 2019 by changlin
+\* Last modified Mon Jul 29 13:36:49 EDT 2019 by changlin
 \* Created Wed Jul 24 18:56:50 EDT 2019 by changlin
