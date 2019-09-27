@@ -18,7 +18,8 @@ Note that I've chosen to take a loose translation of Peterson's algorithm as it
 is usually presented as opposed to a strict mechanical translation of the usual
 pseudo-code. The latter fits more naturally with PlusCal rather than native
 TLA+. I may later wrie a PlusCal definition as well to show a more syntactically
-faithful specification.
+faithful specification. In the meanwhile, you can check out Leslie Lamport's 
+example here: [https://lamport.azurewebsites.net/tla/peterson.html](https://lamport.azurewebsites.net/tla/peterson.html).
 
 However, I hope that by being a looser translation of the spirit of Peterson's
 algorithm, I've also made it clear what parts of Peterson's algorithm are truly
